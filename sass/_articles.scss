@@ -1,0 +1,101 @@
+.article-list {
+    h1 {
+        font-size: var(--font-size-h1);
+    }
+
+    > p {
+        color: var(--muted);
+    }
+
+    .articles {
+        list-style: none;
+        border-top: 1px solid var(--border);
+        margin-top: var(--spacing-unit);
+        padding-left: 0 !important;
+
+        .article-item {
+            padding: calc(var(--spacing-unit) / 1.5) 0;
+            border-bottom: 1px solid var(--border);
+
+            &:last-child {
+                border-bottom: none;
+                padding-bottom: 0;
+            }
+
+            time {
+                display: inline-block;
+                color: var(--muted);
+                font-size: var(--font-size-smaller);
+                margin-right: var(--spacing-unit-half);
+                font-feature-settings: "tnum";
+            }
+
+            h2 {
+                display: inline;
+                font-size: var(--font-size-h6);
+                font-weight: 500;
+
+                a {
+                    color: var(--text);
+                    text-decoration: none;
+                    border-bottom: 1px solid transparent;
+                    transition: all 0.2s;
+
+                    &:hover {
+                        color: var(--accent);
+                        border-color: var(--accent);
+                    }
+                }
+            }
+
+            .excerpt {
+                display: block;
+                color: var(--muted);
+                font-size: var(--font-size-small);
+                line-height: var(--line-height);
+                margin: var(--spacing-unit-quarter) 0 0;
+            }
+        }
+    }
+
+    .no-articles {
+        color: var(--muted);
+        font-style: italic;
+        text-align: center;
+        padding: var(--spacing-unit-half) 0;
+    }
+}
+
+.article {
+    .article-header {
+        margin-bottom: var(--spacing-unit);
+        padding-bottom: var(--spacing-unit-half);
+        border-bottom: 1px solid var(--border);
+
+        h1 {
+            font-size: var(--font-size-h1);
+            margin-bottom: var(--spacing-unit-quarter);
+        }
+
+        time {
+            color: var(--muted);
+            font-size: var(--font-size-small);
+            font-feature-settings: "tnum";
+        }
+    }
+
+    .article-content {
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: var(--spacing-unit) 0;
+        }
+
+        blockquote {
+            border-left: 3px solid var(--accent);
+            padding-left: var(--spacing-unit);
+            margin: var(--spacing-unit) 0;
+            color: var(--muted);
+        }
+    }
+}

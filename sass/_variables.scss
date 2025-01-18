@@ -1,0 +1,25 @@
+:root {
+    --max-width: 45rem;
+    --spacing-unit: 1.5rem;
+    --spacing-unit-half: calc(var(--spacing-unit) / 2);
+    --spacing-unit-quarter: calc(var(--spacing-unit) / 4);
+    --spacing-unit-double: calc(var(--spacing-unit) * 2);
+    --spacing-unit-triple: calc(var(--spacing-unit) * 3);
+
+    --font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    --font-family-mono: "SF Mono", Consolas, Monaco, monospace;
+    --font-size-base: 16px;
+    --line-height: 1.6;
+    --line-height-heading: 1.2;
+
+    --font-size-h1: 2.5rem;
+    --font-size-h2: 1.75rem;
+    --font-size-h3: 1.5rem;
+    --font-size-h4: 1.25rem;
+    --font-size-h5: 1.1rem;
+    --font-size-h6: 1rem;
+    --font-size-small: 0.9rem;
+    --font-size-smaller: 0.85rem;
+
+    --border-radius: 4px;
+}

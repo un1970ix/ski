@@ -1,0 +1,19 @@
+.not-found {
+    text-align: center;
+    padding: var(--spacing-unit-double) 0;
+
+    h1 {
+        font-size: 6rem;
+        margin-bottom: var(--spacing-unit);
+        color: var(--accent);
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: var(--spacing-unit);
+    }
+
+    p {
+        margin-bottom: var(--spacing-unit);
+    }
+}

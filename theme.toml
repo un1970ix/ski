@@ -1,0 +1,10 @@
+demo = "https://ski.un1970ix.com"
+description = "A minimalist Zola theme inspired by Swiss design principles."
+homepage = "https://github.com/un1970ix/ski"
+license = "MIT"
+min_version = "0.19.2"
+name = "ski"
+
+[author]
+homepage = "https://un1970ix.com"
+name = "Bedir Ekim"

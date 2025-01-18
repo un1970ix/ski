@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="{{ config.default_language }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ config.description }}">
+    <title>{% block title %}{{ config.title }}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ get_url(path='stiller.css') }}">
+    {% if config.extra.nav.show_feed %}
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path='rss.xml') }}">
+    {% endif %}
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="site-title">{{ config.title }}</a>
+            <span class="nav-separator">·</span>
+            {% for link in config.extra.nav.links %}
+            <a href="{{ get_url(path=link.url) }}" {% if current_url and current_url is starting_with(link.url) %}class="active"{% endif %}>{{ link.name }}</a>
+            {% endfor %}
+            {% if config.extra.nav.show_feed %}
+            <a href="{{ get_url(path='rss.xml') }}" title="RSS Feed">RSS</a>
+            {% endif %}
+        </nav>
+    </header>
+    <main>
+        {% block content %} {% endblock %}
+    </main>
+    <footer id="site-footer">
+        {% if config.extra.footer.socials %}
+        <ul id="socials">
+            {% for link in config.extra.footer.socials %}
+            <li>
+                <a href="{{ link.url }}" rel="me" title="{{ link.name }}">
+                    <i class="icon" style='mask-image: url("data:image/svg+xml,{{ link.icon }}"); -webkit-mask-image: url("data:image/svg+xml,{{ link.icon }}")'></i>
+                    <span>{{ link.name }}</span>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+
+        {% if config.extra.footer.show_copyright %}
+        <span class="copyright">&copy; {{ now() | date(format="%Y") }} {{ config.author }}</span>
+        {% endif %}
+
+        {% if config.extra.footer.show_made_with %}
+        <span class="made-with">Made with <a href="https://www.getzola.org">Zola</a> using <a href="https://github.com/un1970ix/ski">ski</a> theme.</span>
+        {% endif %}
+    </footer>
+</body>
+</html>

@@ -1,0 +1,22 @@
+@media (max-width: 600px) {
+    html {
+        font-size: 15px;
+    }
+
+    body {
+        padding: var(--spacing-unit-half);
+    }
+
+    .article-list {
+        .articles .article-item article {
+            header {
+                flex-direction: column;
+                gap: var(--spacing-unit-quarter);
+            }
+
+            .excerpt {
+                margin-left: 0;
+            }
+        }
+    }
+}

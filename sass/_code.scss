@@ -1,0 +1,34 @@
+pre, table {
+    padding: var(--spacing-unit);
+    overflow-x: auto;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--spacing-unit);
+}
+
+code {
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-small);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+
+    th, td {
+        padding: calc(var(--spacing-unit) / 3);
+        border: 1px solid var(--border);
+        text-align: left;
+    }
+
+    th {
+        font-weight: 600;
+        background: var(--bg);
+        border-bottom-width: 2px;
+    }
+
+    tr:nth-child(even) {
+        background: var(--bg);
+    }
+}

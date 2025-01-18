@@ -1,0 +1,63 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: var(--font-size-base);
+    line-height: var(--line-height);
+}
+
+body {
+    font-family: var(--font-family);
+    background: var(--bg);
+    color: var(--text);
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: var(--spacing-unit);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: var(--line-height-heading);
+    margin-bottom: var(--spacing-unit-half);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+h1 { font-size: var(--font-size-h1); }
+h2 { font-size: var(--font-size-h2); }
+h3 { font-size: var(--font-size-h3); }
+h4 { font-size: var(--font-size-h4); }
+h5 { font-size: var(--font-size-h5); }
+h6 { font-size: var(--font-size-h6); }
+
+p, ul, ol {
+    margin-bottom: var(--spacing-unit);
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+
+    &:hover {
+        border-color: var(--accent);
+    }
+
+    &.active {
+        border-color: var(--accent);
+    }
+}
+
+ul, ol {
+    margin-bottom: var(--spacing-unit);
+    padding-left: 1.2rem;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: var(--spacing-unit) 0;
+}
