@@ -15,8 +15,8 @@
         li {
             a {
                 .icon {
-                    width: 1.5rem;
-                    height: 1.5rem;
+                    width: 1.25rem;
+                    height: 1.25rem;
                 }
             }
         }
@@ -25,16 +25,16 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            width: 2.5rem;
-            height: 2.5rem;
+            width: 2rem;
+            height: 2rem;
             border-radius: 50%;
             border: 1px solid var(--border);
             padding: 0rem;
             border-color: var(--accent);
 
             svg {
-                width: 1.25rem;
-                height: 1.25rem;
+                width: 1rem;
+                height: 1rem;
                 fill: currentColor;
             }
 
