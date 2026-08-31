@@ -11,9 +11,10 @@ generate_feeds = true
 minify_html = true
 
 [markdown]
-highlight_code = true
-highlight_theme = "nord"
 smart_punctuation = false
+
+[markdown.highlighting]
+theme = "nord"
 
 [extra.nav]
 show_feed = true
