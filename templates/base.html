@@ -16,7 +16,8 @@
             <a href="/" class="site-title">{{ config.title }}</a>
             <span class="nav-separator">·</span>
             {% for link in config.extra.nav.links %}
-            <a href="{{ get_url(path=link.url) }}" {% if current_url and current_url is starting_with(link.url) %}class="active"{% endif %}>{{ link.name }}</a>
+            <a href="{{ get_url(path=link.url) }}" {% if current_url and
+                current_url is starting_with(pat=link.url) %}class="active"{% endif %}>{{ link.name }}</a>
             {% endfor %}
             {% if config.extra.nav.show_feed %}
             <a href="{{ get_url(path='rss.xml') }}" title="RSS Feed">RSS</a>
