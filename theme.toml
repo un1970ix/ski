@@ -8,3 +8,12 @@ name = "ski"
 [author]
 homepage = "https://un1970ix.com"
 name = "Bedir Ekim"
+
+[extra.nav]
+show_feed = true
+links = []
+
+[extra.footer]
+show_copyright = false
+show_made_with = true
+socials = []
